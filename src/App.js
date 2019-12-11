@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import './components/CurrencyContiener.css';
+import CurrencyContianer from './components/CurrencyContiener';
+import { Container } from 'reactstrap';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+  <div className="parent">
+  <Container>
+    <h2><span>Currency </span> Converter <span role="img" aria-label="money">&#x1f4b5;</span> </h2>
+    <CurrencyContianer/>
+    </Container>
+  </div>
+)};
 export default App;
